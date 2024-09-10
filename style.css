@@ -7,3 +7,39 @@
   src: url(https://cdn.jsdelivr.net/fontsource/fonts/kalam@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/kalam@latest/latin-400-normal.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+:root {
+  --modal-duration: 1s;
+  --primary-color: blue;
+  --secondary-color: pink;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kalam';
+  /*When calling the imported font, you must call the family named in the import*/
+  margin: 0;
+}
+
+nav {
+  background-color: var(--primary-color);
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 100;
+  /* transform: translateX(-100%)  /*This styles the ability to slide the nav bar, needs to stay commented until styled*/
+
+}
+
+nav .logo {
+  padding: 30px 0;
+  text-align: center;
+}
