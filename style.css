@@ -10,7 +10,7 @@
 
 :root {
   --modal-duration: 1s;
-  --primary-color: blue;
+  --primary-color: navy;
   --secondary-color: pink;
 
 }
@@ -25,9 +25,10 @@ body {
   margin: 0;
 }
 
+/* NAVBAR */
 nav {
   background-color: var(--primary-color);
-  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  border-right: 2px solid rgba(155, 95, 244, 0.988);
   color: aliceblue;
   position: fixed;
   top: 0;
@@ -36,10 +37,41 @@ nav {
   height: 100vh;
   z-index: 100;
   /* transform: translateX(-100%)  /*This styles the ability to slide the nav bar, needs to stay commented until styled*/
-
 }
 
 nav .logo {
   padding: 30px 0;
   text-align: center;
+}
+
+nav .logo img {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+
+}
+
+/*Notice how we effectively work from top to bottom of a particularly page in CSS, separation of concerns*/
+
+nav ul {
+  border-bottom: 2px solid rgba(155, 95, 244, 0.988);
+  padding: 2px;
+  margin: 0;
+}
+
+/* Notice the need for two different borders. This helps complete the bordering of the UL */
+nav ul li {
+  border-top: 2px solid rgba(155, 95, 244, 0.988);
+  padding: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: aquamarine;
 }
