@@ -36,7 +36,8 @@ nav {
   width: 200px;
   height: 100vh;
   z-index: 100;
-  /* transform: translateX(-100%)  /*This styles the ability to slide the nav bar, needs to stay commented until styled*/
+  transform: translateX(-100%)
+    /*This styles the ability to slide the nav bar, needs to stay commented until styled */
 }
 
 nav .logo {
@@ -74,4 +75,65 @@ nav ul li a:hover {
   color: white;
   text-decoration: underline;
   text-decoration-color: aquamarine;
+}
+
+/* HEADER STYLES */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 130%;
+  position: relative;
+  padding: 50px 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 30px 0;
+}
+
+button,
+input [type='submit'] {
+  background-color: hotpink;
+  border: 2px solid pink;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px 15px;
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  border: 2px solid pink;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px 15px;
+  color: hotpink;
+}
+
+.toggle {
+  background-color: gold;
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px 15px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.toggle:hover {
+  background-color: rgba(white, white, white, 0.2);
+  border: 2px solid gold;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px 15px;
+  color: cornflowerblue;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
