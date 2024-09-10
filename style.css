@@ -163,7 +163,7 @@ button:hover {
 /* In vanilla you have to control everything about the modal in the CSS and within the script. This is an important distinction between using vanilla and a framework with intense libraries. */
 .modal-container {
   background-color: rgba(0, 0, 0, 0.6);
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
