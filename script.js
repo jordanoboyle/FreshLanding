@@ -4,6 +4,12 @@ const open = document.getElementById('open');
 const modal = document.getElementById('modal');
 
 
+//Dialog Modal Practice
+const updateButton = document.getElementById('updateDetails');
+const cancel = document.getElementById('cancel');
+const dialog = document.getElementsByClassName('favDialog');
+dialog.returnValue = 'favAnimal';
+
 //Toggle the Nav Bar:
 toggle.addEventListener('click', ()  => 
   document.body.classList.toggle('show-nav')
@@ -26,3 +32,6 @@ close.addEventListener('click', () =>
 window.addEventListener('click', (e) =>
   e.target === modal ? modal.classList.remove('show-modal') : false 
 );
+
+
+//Script Block for Favorite Animal Modal Dialog
