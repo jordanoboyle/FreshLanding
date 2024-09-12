@@ -23,6 +23,14 @@ body {
   font-family: 'Kalam';
   /*When calling the imported font, you must call the family named in the import*/
   margin: 0;
+  /* time it will take the transition to happen */
+  transition: transform 0.4s;
+}
+
+body.show-nav {
+  /* width of the nav  */
+  /* it is important that this matches width of nav bar. Otherwise, white space.  */
+  transform: translate(200px);
 }
 
 /* NAVBAR */
@@ -169,6 +177,15 @@ button:hover {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal-container.close-modal {
+  display: none;
 }
 
 .modal {
@@ -182,6 +199,10 @@ button:hover {
   transform: translate(-50%, -50%);
   width: 400px;
   max-width: 100%;
+  /* This is a way to animate the modal and have a fading effect to open and close  */
+  /* Needs a KEYFRAME to work properly */
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
 }
 
 .modal-header {
@@ -221,4 +242,17 @@ button:hover {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+
+/* KEYFRAMES FOR THE MODAL: */
+/* Look for the situation above where I talk about keyframes. */
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
